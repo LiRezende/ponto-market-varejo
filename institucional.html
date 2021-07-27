@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, user-scalable=0"/>
+        <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/template.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <script src="assets/js/script.js"></script>
@@ -193,10 +194,24 @@
             </div>
         </section>
         <section>
-            <div style="text-align: center; padding-top: 20px;">
+            <div class="container">
                 <h2>
                     O Que Nossos Clientes Dizem
                 </h2>
+            </div>
+            <div class="container">
+                <div class="container-icons">
+                    <h3><i class="fas fa-star"></i>Nome</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias.</p>
+                </div>
+                <div class="container-icons">
+                    <h3><i class="fas fa-star"></i>Nome</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias.</p>
+                </div>
+                <div class="container-icons">
+                    <h3><i class="fas fa-star"></i>Nome</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias.</p>
+                </div>
             </div>
         </section>
         <section class="mid-section">
@@ -217,20 +232,47 @@
                 </div>
                 <div>
                     <form>
-                        <input id="form-name" type="text" placeholder="Nome *"><br>
-                        <input id="form-tel" type="tel" placeholder="Telefone *"><br>
-                        <input id="form-mail" type="email" placeholder="E-mail *"><br>
-                        <input id="form-company" type="text" placeholder="Empresa *"><br>
-                        <p>Selecione a Solução de Interesse</p>
-                        <input type="checkbox" id="crm_business" name="crm_business" value="CRM Business">
-                        <label for="crm_business"> CRM Business</label><br>
-                        <input type="checkbox" id="crm_varejo" name="crm_varejo" value="CRM Varejo">
-                        <label for="crm_varejo"> CRM Varejo</label><br>
-                        <input type="checkbox" id="solucao_personalizada" name="solucao_personalizada" value="Solucao Personalizada">
-                        <label for="solucao_personalizada"> Solução Personalizada</label><br>
-                        <textarea id="form-message" placeholder="Mensagem *"></textarea><br>
-                        <input id="form-btn" type="submit">
+                        <div class="container">
+                            <div class="card-form">
+                                <input id="form-name" type="text" placeholder="Nome *"><br>
+                                <input id="form-tel" type="tel" placeholder="Telefone *"><br>
+                                <input id="form-mail" type="email" placeholder="E-mail *"><br>
+                                <input id="form-company" type="text" placeholder="Empresa *"><br>
+                            </div>
+                            <div class="card-form">
+                                <p>Selecione Abaixo a Solução de Seu Interesse</p>
+                                <input type="checkbox" id="crm_business" name="crm_business" value="CRM Business">
+                                <label for="crm_business"> CRM Business</label><br>
+                                <input type="checkbox" id="crm_varejo" name="crm_varejo" value="CRM Varejo">
+                                <label for="crm_varejo"> CRM Varejo</label><br>
+                                <input type="checkbox" id="solucao_personalizada" name="solucao_personalizada" value="Solucao Personalizada">
+                                <label for="solucao_personalizada"> Solução Personalizada</label><br>
+                                <textarea id="form-message" placeholder="Mensagem *"></textarea><br>
+                                <input id="form-btn" type="submit">
+                            </div>
+                        </div> 
                     </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>
+                    Parceiros de Negócios
+                </h2>
+            </div>
+            <div class="container">
+                <div class="container-icons">
+                    <h3><i class="fas fa-star"></i></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias.</p>
+                </div>
+                <div class="container-icons">
+                    <h3><i class="fas fa-star"></i></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias.</p>
+                </div>
+                <div class="container-icons">
+                    <h3><i class="fas fa-star"></i></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias.</p>
                 </div>
             </div>
         </section>
@@ -271,5 +313,6 @@
                 </a>
             </div>
         </footer>
-    </body>
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    </body>	
 </html>

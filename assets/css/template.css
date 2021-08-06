@@ -14,6 +14,7 @@
     font-family: 'Poppins', sans-serif;
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -58,24 +59,27 @@ a {
 }
 
 /* Header e Menu */
+.top-bar {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.top-bar a:hover {
+    color: var(--quaternary);
+}
 
 header {
     display: flex;
     justify-content: center;
-    height: 100px;
 }
 
 .container-header {
     display: flex;
     justify-content: space-between;
+    gap:18rem;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.menu {
+.logo, .menu {
     display: flex;
     align-items: center;
 }
@@ -94,7 +98,7 @@ nav a {
     display: block;
     padding: 10px;
     text-transform: uppercase;
-    color:var(--primary);
+    color:var(--secondary);
     font-weight: 700;
     border: 2px solid transparent;
 
@@ -167,9 +171,13 @@ section {
     justify-content: center;
 }
 
+.container-icons {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .icons {
-    font-size: 42px;
-    text-align: center;
+    font-size: 38px;
     color:var(--secondary);
 }
 
@@ -193,7 +201,48 @@ section {
     color: #fff;
 }
 
+.container-items {
+    text-align: center;
+    
+}
+
+.container-items h3 {
+    font-size: 20px;
+}
+
+.container-items span {
+    font-size: 26px;
+    color: var(--secondary);
+}
+
+.plans {
+    gap: 3rem;
+}
+
+.price-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.price-card p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price-card span {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 /* Contact Form */
+.card-form {
+    padding:0 10px;
+}
+
 input#form-name, input#form-mail, input#form-tel, input#form-company, textarea#form-message {
     width:200px;
     background-color: transparent;
@@ -208,7 +257,7 @@ input#form-name, input#form-mail, input#form-tel, input#form-company, textarea#f
 }
 
 textarea#form-message {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 ::-webkit-input-placeholder {
@@ -228,7 +277,6 @@ textarea#form-message {
  }
 
 input#form-btn {
-    margin-top: 15px;
     padding: 10px;
     background-color: transparent;
     border: 2px solid var(--quaternary);
@@ -246,12 +294,11 @@ input#form-btn {
 }
 
 .social-midia-footer {
-    font-size:35px;
+    font-size:30px;
     padding:7px;
 }
 
 /* Responsividade */
-
 .menuMobile {
     display: none;
     width: 40px;
@@ -269,7 +316,10 @@ input#form-btn {
 }
 
 @media (max-width:768px) {
-    
+    .container-header {
+        gap: 0;
+    }
+
     #banner {
         height: auto;
     }
@@ -296,6 +346,14 @@ input#form-btn {
 
     #main section, #main aside {
         padding: 20px;
+    }
+
+    input#form-name, input#form-mail, input#form-tel, input#form-company, textarea#form-message {
+        width: auto;
+    }
+
+    input#form-name {
+        margin-top: 20px;
     }
 
     .footer_box, .footer_area {
@@ -333,5 +391,3 @@ input#form-btn {
         justify-content: space-around;
     }
 }
-
-

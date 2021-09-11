@@ -185,6 +185,7 @@ section {
 	border-radius:100px;
     color: var(--secondary);
     padding: 10px 20px;
+    margin: 20px 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -339,6 +340,10 @@ input#form-btn {
 
     .container, .container-hero {
         flex-direction: column;
+    }
+
+    .second-container {
+        flex-direction: column-reverse;
     }
 
     #main section, #main aside {

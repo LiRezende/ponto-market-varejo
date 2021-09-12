@@ -258,7 +258,7 @@ input#form-name, input#form-mail, input#form-tel, input#form-company, textarea#f
     width:200px;
     background-color: transparent;
     border: 2px solid var(--quaternary);
-    border-radius:30px;
+    border-radius: 8px;
     font-size: 18px;
     color: var(--quaternary);
     padding:5px 10px;
@@ -291,7 +291,7 @@ input#form-btn {
     padding: 10px;
     background-color: transparent;
     border: 2px solid var(--quaternary);
-    border-radius:30px;
+    border-radius: 8px;
     font-size: 16px;
     color: var(--quaternary);
     display: inline-block;

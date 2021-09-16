@@ -217,7 +217,7 @@ span i {
 
 .container-items {
     text-align: center;
-    margin: 25px 0;
+    margin: 25px auto;
     
 }
 
@@ -251,6 +251,59 @@ span i {
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
+}
+
+/* Testimonial Slides */
+.hero {
+    position: relative; 
+    margin: 0;
+}
+
+.hero .slide-container .slide {
+    border-radius: 8px;
+    background-color: #eee;
+    width: 600px;
+    padding: 25px;
+    margin: auto auto 60px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.hero .slide-container {
+    display: none;
+}
+
+.hero .slide-container.active {
+    display: block;
+}
+
+.hero #next,
+.hero #previous {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.hero #next:hover,
+.hero #previous:hover {
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.hero #next {
+    right: 250px;
+}
+
+.hero #previous {
+    left: 250px;
 }
 
 /* Contact Form */
@@ -415,57 +468,4 @@ footer {
         display: flex;
         flex-direction: column;
     }
-}
-
-/* Testimonial Slides */
-.hero {
-    position: relative; 
-    margin: 0;
-}
-
-.hero .slide-container .slide {
-    border-radius: 8px;
-    background-color: #eee;
-    width: 600px;
-    padding: 25px;
-    margin: auto auto 60px auto;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 0.5s;
-}
-
-.hero .slide-container {
-    display: none;
-}
-
-.hero .slide-container.active {
-    display: block;
-}
-
-.hero #next,
-.hero #previous {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 20px;
-    cursor: pointer;
-    color: var(--secondary);
-}
-
-.hero #next:hover,
-.hero #previous:hover {
-    background-color: #eee;
-    border-radius: 8px;
-}
-
-.hero #next {
-    right: 250px;
-}
-
-.hero #previous {
-    left: 250px;
 }

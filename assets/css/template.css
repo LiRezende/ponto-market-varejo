@@ -419,8 +419,9 @@ footer {
 
 /* Testimonial Slides */
 .hero {
-    position: relative;  
-    perspective: 1000px;
+    position: relative; 
+    width: 1170px;
+    margin: 0;
 }
 
 .hero .slide-container .slide {
@@ -428,8 +429,8 @@ footer {
     background-color: #eee;
     width: 600px;
     padding: 25px;
-    margin: 10px;
-    position: relative;
+    margin: auto;
+    
     transform-style: preserve-3d;
     transition: 0.5s;
 }
@@ -462,9 +463,9 @@ footer {
 }
 
 .hero #next {
-    right: -50px;
+    right: -5px;
 }
 
 .hero #previous {
-    left: -50px;
+    left: -5px;
 }

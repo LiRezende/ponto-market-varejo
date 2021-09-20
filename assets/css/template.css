@@ -326,6 +326,7 @@ input#form-name, input#form-mail, input#form-tel, input#form-company, textarea#f
 
 textarea#form-message {
     margin-top: 5px;
+    height: 200px;
 }
 
 ::-webkit-input-placeholder {
@@ -423,8 +424,20 @@ footer {
         padding: 20px;
     }
 
+    .hero .slide-container .slide {
+        width: 300px;
+    }
+
+    .hero #next {
+        right: 10px;
+    }
+    
+    .hero #previous {
+        left: 10px;
+    }
+
     input#form-name, input#form-mail, input#form-tel, input#form-company, textarea#form-message {
-        width: auto;
+        width: 250px;
     }
 
     input#form-name {

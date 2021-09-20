@@ -220,6 +220,10 @@ span i {
     color: var(--secondary);
 }
 
+.container-icons {
+    padding: 5px 20px;
+}
+
 .plans {
     gap: 3rem;
 }

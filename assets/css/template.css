@@ -177,16 +177,6 @@ section {
     justify-content: center;
 }
 
-.container-icons {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.icons {
-    font-size: 38px;
-    color:var(--secondary);
-}
-
 .btn-mid {
     cursor: pointer;
     background-color: transparent; 
@@ -218,7 +208,7 @@ span i {
 .container-items {
     text-align: center;
     margin: 25px auto;
-    
+    width: 300px;
 }
 
 .container-items h3 {
@@ -447,7 +437,7 @@ footer {
     }
 
     .hero .slide-container .slide {
-        width: 300px;
+        width: 320px;
     }
 
     .hero #next {

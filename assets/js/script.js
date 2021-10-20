@@ -2,17 +2,23 @@
 let slides = document.querySelectorAll(".slide-container");
 let index = 0;
 
+setInterval(function next() {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 5000);
+
 function next() {
   slides[index].classList.remove("active");
   index = (index + 1) % slides.length;
   slides[index].classList.add("active");
-}
+};
 
 function previous() {
   slides[index].classList.remove("active");
   index = (index - 1 + slides.length) % slides.length;
   slides[index].classList.add("active");
-}
+};
 
 // Menu Mobile
 window.onload = function () {

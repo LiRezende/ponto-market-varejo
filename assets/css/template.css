@@ -457,6 +457,10 @@ footer {
         margin-top: 20px;
     }
 
+    #previous, #next {
+        display: none;
+    }
+
     .footer-logo {
         padding-bottom: 25px;
     }
